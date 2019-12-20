@@ -1,0 +1,42 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello DefaultController!{% endblock %}
+
+{% block body %}
+{% for i in 1..5 %}
+    <div class="row rowAnnonce ">
+        <div class="col-xl-12 col-lg-9 offset-lg-1 offset-xl-0">
+            <div class="row  justify-content-md-center h-100">
+                <div class="col-lg-8 col-xl-8 centeredRow ">
+                    <div class="row">
+                        <div class="col-lg-3 col-xl-3 no-padding">
+                            <img class=" h-100"
+                                 src="https://img4.leboncoin.fr/ad-image/3ca50d04a0a89fdf08ba08d621bd73db07dd7741.jpg"
+                                 alt="">
+                        </div>
+                        <div class="col-lg-9 col-xl-9 paddingAnnonce">
+                            <p class="titleAnnonce">
+                                Ma super annonce
+                                <span class="float-right"><i class="far fa-heart"></i></span>
+                            </p>
+                            <p>
+                                Association
+                            </p>
+                            <p>
+                                Franconville /ile de France
+                            </p>
+                            <p>
+                                Aujourd'hui à 15h30
+                            </p>
+
+                            <p>Par Human'IT</p>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+{% endfor %}
+{% endblock %}
